@@ -6,7 +6,7 @@ This is a very simple code sample that helps you set up a redirect system on you
 
 There is an implementation in PHP (if you are running a LAMP system), and also an implementation in JavaScript (if you are only able to host static content, e.g., on a Content Distribution Network).
 
-I, [Blair Wang](https://www.blair.wang/), release this work to the public domain.
+I, [Blair Wang](https://www.blair.wang/), release this work to the public domain. I consider this a very trivial code sample and do not seek to profit from it in any way. You may use this code sample for any purposes.
 
 ## PHP implementation
 
