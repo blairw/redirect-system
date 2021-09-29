@@ -33,45 +33,43 @@ I, [Blair Wang](https://www.blair.wang/), release this work to the public domain
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Redirect System</title>
+<meta charset="UTF-8">
+<title>Redirect System</title>
+<style>
+p {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1rem;
+	font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+</style>
+<script>
+function bodyDidLoad()
+{
+	var key = window.location.search.replace("?key=", "");
 
-	<style>
-		p {
-			margin: 0 auto;
-			text-align: center;
-			padding-top: 1rem;
-			font-family: "Helvetica Neue", "Helvetica", sans-serif;
-		}
-	</style>
-
-	<script>
-		function bodyDidLoad()
-		{
-			var key = window.location.search.replace("?key=", "");
-
-			if (key == "Wikipedia-Cats")
-			{
-				window.location.replace("https://en.wikipedia.org/wiki/Cats");
-				document.getElementById("status").innerHTML = "Now loading <strong>" + key + "</strong>";
-			}
-			else
-			if (key == "DigitalNomad-Map")
-			{
-				window.location.replace("https://blair.wang/nomadsmap/");
-				document.getElementById("status").innerHTML = "Now loading <strong>" + key + "</strong>";
-			}
-			else
-			{
-				document.getElementById("status").innerHTML = "Resource not found.";
-			}
-		}
-	</script>
+	if (key == "Wikipedia-Cats")
+	{
+		window.location.replace("https://en.wikipedia.org/wiki/Cats");
+		document.getElementById("status").innerHTML = "Now loading <strong>" + key + "</strong>";
+	}
+	else
+	if (key == "DigitalNomad-Map")
+	{
+		window.location.replace("https://blair.wang/nomadsmap/");
+		document.getElementById("status").innerHTML = "Now loading <strong>" + key + "</strong>";
+	}
+	else
+	{
+		document.getElementById("status").innerHTML = "Resource not found.";
+	}
+}
+</script>
 </head>
 <body onload="bodyDidLoad()">
-	<p id="status">
-		Loading ...
-	</p>
+<p id="status">
+	Loading ...
+</p>
 </body>
 </html>
 ```
